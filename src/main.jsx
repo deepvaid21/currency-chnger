@@ -25,6 +25,10 @@ const router= createBrowserRouter(createRoutesFromElements(
   <Route path='/'element={<Layout/>}>
     <Route path='' element={<Home/>}/>
     <Route path='about' element={<About/>}/> 
+    {/* nested route : it means about de andr koi hor path 
+    <Route path='deep'/>
+    </Route> */}
+    
     <Route path='Contact' element={<Contact/>}/>
     <Route 
     loader={githubInfoLoader}
